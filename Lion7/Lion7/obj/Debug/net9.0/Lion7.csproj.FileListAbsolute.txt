@@ -1,0 +1,15 @@
+C:\Users\dltng\Desktop\Lion7\Lion7\Lion7\bin\Debug\net9.0\Lion7.exe
+C:\Users\dltng\Desktop\Lion7\Lion7\Lion7\bin\Debug\net9.0\Lion7.deps.json
+C:\Users\dltng\Desktop\Lion7\Lion7\Lion7\bin\Debug\net9.0\Lion7.runtimeconfig.json
+C:\Users\dltng\Desktop\Lion7\Lion7\Lion7\bin\Debug\net9.0\Lion7.dll
+C:\Users\dltng\Desktop\Lion7\Lion7\Lion7\bin\Debug\net9.0\Lion7.pdb
+C:\Users\dltng\Desktop\Lion7\Lion7\Lion7\obj\Debug\net9.0\Lion7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dltng\Desktop\Lion7\Lion7\Lion7\obj\Debug\net9.0\Lion7.AssemblyInfoInputs.cache
+C:\Users\dltng\Desktop\Lion7\Lion7\Lion7\obj\Debug\net9.0\Lion7.AssemblyInfo.cs
+C:\Users\dltng\Desktop\Lion7\Lion7\Lion7\obj\Debug\net9.0\Lion7.csproj.CoreCompileInputs.cache
+C:\Users\dltng\Desktop\Lion7\Lion7\Lion7\obj\Debug\net9.0\Lion7.sourcelink.json
+C:\Users\dltng\Desktop\Lion7\Lion7\Lion7\obj\Debug\net9.0\Lion7.dll
+C:\Users\dltng\Desktop\Lion7\Lion7\Lion7\obj\Debug\net9.0\refint\Lion7.dll
+C:\Users\dltng\Desktop\Lion7\Lion7\Lion7\obj\Debug\net9.0\Lion7.pdb
+C:\Users\dltng\Desktop\Lion7\Lion7\Lion7\obj\Debug\net9.0\Lion7.genruntimeconfig.cache
+C:\Users\dltng\Desktop\Lion7\Lion7\Lion7\obj\Debug\net9.0\ref\Lion7.dll

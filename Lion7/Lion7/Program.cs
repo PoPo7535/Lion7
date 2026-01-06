@@ -1,13 +1,85 @@
 ﻿using System;
+using System.Drawing;
 
 namespace MyApp
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            var arr = new int[26];
+            Array.Fill(arr, -1);
+            var input = Console.ReadLine();
+            for (int i = 0; i < input.Length; ++i)
+            {
+                var index = input[i] - 'a';
+                if (-1 == arr[index])
+                    arr[index] = i;
+            }
 
+            foreach (var value in arr)
+                Console.Write($"{value} ");
         }
 
+        void ASD()
+        {
+            var N = int.Parse(Console.ReadLine());
+            var arr = new int[N, N];
+            var blueCount = 0;
+            var whiteCount = 0;
+
+            for (int y = 0; y < N; ++y)
+            {
+                var n = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+                for (int x = 0; x < N; ++x)
+                {
+                    arr[y, x] = n[x];
+                }
+            }
+
+            var queue = new Queue<Rectangle>();
+            queue.Enqueue(new Rectangle(0, 0, N, N));
+            while (0 != queue.Count)
+            {
+                var rect = queue.Dequeue();
+                var startColor = IsWhite(rect.Y, rect.X);
+                bool breaking = false;
+                for (int y = 0; y < rect.Height; ++y)
+                {
+                    for (int x = 0; x < rect.Width; ++x)
+                    {
+                        if (startColor != IsWhite(y + rect.Y, x + rect.X))
+                        {
+                            breaking = true;
+                            break;
+                        }
+                    }
+
+                    if (breaking)
+                        break;
+                }
+
+                if (false == breaking)
+                {
+                    if (startColor)
+                        ++whiteCount;
+                    else
+                        ++blueCount;
+                }
+                else if (0 != rect.Width / 2)
+                {
+                    var size = rect.Width / 2;
+                    queue.Enqueue(new Rectangle(rect.X, rect.Y, size, size));
+                    queue.Enqueue(new Rectangle(rect.X + size, rect.Y, size, size));
+                    queue.Enqueue(new Rectangle(rect.X, rect.Y + size, size, size));
+                    queue.Enqueue(new Rectangle(rect.X + size, rect.Y + size, size, size));
+                }
+            }
+
+            Console.WriteLine(whiteCount);
+            Console.WriteLine(blueCount);
+            bool IsWhite(int y, int x) => arr[y, x] == 0;
+
+        }
     }
 }
